@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "C.exe"
   "C.pdb"
-  "CMakeFiles/C.dir/main.c.o"
+  "CMakeFiles/C.dir/findPrime.c.o"
+  "CMakeFiles/C.dir/reverse.c.o"
   "libC.dll.a"
 )
 

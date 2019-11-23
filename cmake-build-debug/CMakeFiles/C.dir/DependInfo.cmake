@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/f/C/main.c" "/cygdrive/f/C/cmake-build-debug/CMakeFiles/C.dir/main.c.o"
+  "/cygdrive/f/C/findPrime.c" "/cygdrive/f/C/cmake-build-debug/CMakeFiles/C.dir/findPrime.c.o"
+  "/cygdrive/f/C/reverse.c" "/cygdrive/f/C/cmake-build-debug/CMakeFiles/C.dir/reverse.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

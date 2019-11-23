@@ -3,4 +3,5 @@ project(C C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(C reverse.c)
+add_executable(main1 Reverse.c)
+add_executable(main2 FindPrime.c)

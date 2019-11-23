@@ -111,44 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named C
+# Target rules for targets named main1
 
 # Build rule for target.
-C : cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 C
-.PHONY : C
+main1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main1
+.PHONY : main1
 
 # fast build rule for target.
-C/fast:
-	$(MAKE) -f CMakeFiles/C.dir/build.make CMakeFiles/C.dir/build
-.PHONY : C/fast
+main1/fast:
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/build
+.PHONY : main1/fast
 
-main.o: main.c.o
+#=============================================================================
+# Target rules for targets named main2
 
-.PHONY : main.o
+# Build rule for target.
+main2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main2
+.PHONY : main2
+
+# fast build rule for target.
+main2/fast:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
+.PHONY : main2/fast
+
+FindPrime.o: FindPrime.c.o
+
+.PHONY : FindPrime.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/C.dir/build.make CMakeFiles/C.dir/main.c.o
-.PHONY : main.c.o
+FindPrime.c.o:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/FindPrime.c.o
+.PHONY : FindPrime.c.o
 
-main.i: main.c.i
+FindPrime.i: FindPrime.c.i
 
-.PHONY : main.i
+.PHONY : FindPrime.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/C.dir/build.make CMakeFiles/C.dir/main.c.i
-.PHONY : main.c.i
+FindPrime.c.i:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/FindPrime.c.i
+.PHONY : FindPrime.c.i
 
-main.s: main.c.s
+FindPrime.s: FindPrime.c.s
 
-.PHONY : main.s
+.PHONY : FindPrime.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/C.dir/build.make CMakeFiles/C.dir/main.c.s
-.PHONY : main.c.s
+FindPrime.c.s:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/FindPrime.c.s
+.PHONY : FindPrime.c.s
+
+Reverse.o: Reverse.c.o
+
+.PHONY : Reverse.o
+
+# target to build an object file
+Reverse.c.o:
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/Reverse.c.o
+.PHONY : Reverse.c.o
+
+Reverse.i: Reverse.c.i
+
+.PHONY : Reverse.i
+
+# target to preprocess a source file
+Reverse.c.i:
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/Reverse.c.i
+.PHONY : Reverse.c.i
+
+Reverse.s: Reverse.c.s
+
+.PHONY : Reverse.s
+
+# target to generate assembly for a file
+Reverse.c.s:
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/Reverse.c.s
+.PHONY : Reverse.c.s
 
 # Help Target
 help:
@@ -157,11 +197,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... C"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... main1"
+	@echo "... main2"
+	@echo "... FindPrime.o"
+	@echo "... FindPrime.i"
+	@echo "... FindPrime.s"
+	@echo "... Reverse.o"
+	@echo "... Reverse.i"
+	@echo "... Reverse.s"
 .PHONY : help
 
 

@@ -6,11 +6,5 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/f/C/main.c
-stdio.h
--
-string.h
--
-stdlib.h
--
+/cygdrive/f/C/findPrime.c
 

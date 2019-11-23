@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
 void reverse(char origin[26], char new[26]) {
     // 将原数组的值放到新的数组中
@@ -35,18 +34,26 @@ int main() {
         newCharacterSet[i] = NULL;
     }
 
+    // 输出原数组
+    printf("Origin array:\n");
+    for (int i = 0; i < 26; i++) {
+        printf("%c", originCharacterSet[i]);
+    }
+
     // 开始递归
     reverse(originCharacterSet, newCharacterSet);
 
     // 输出新数组
-    for (int i = 0; i < 26; ++i) {
+    printf("\nReversed array:\n");
+    for (int i = 0; i < 26; i++) {
         printf("%c", newCharacterSet[i]);
     }
 
-    printf("\n");
+
     // 堵塞程序执行, 检查输出
-    //system("cmd.exe C://Windows/System32/pause.exe");
+    //system("pause");
     // 使用此项在我这里出现 sh: pause: command not found
+    printf("\n");
     printf("Press any key to continue...");
     getchar();
 
