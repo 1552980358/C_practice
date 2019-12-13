@@ -7,7 +7,7 @@ void reverse(char origin[26], char new[26]) {
 
     // 移除数组中最后一个值
     // 不移除则会导致检查出错
-    origin[strlen(origin) - 1] = NULL;
+    origin[strlen(origin) - 1] = (char) NULL;
 
     //检查原数组是否清空
     if (strlen(origin) != 0) {
@@ -26,12 +26,12 @@ int main() {
 
     // 始初赋值
     for (int i = 0; i < 26; i++) {
-        originCharacterSet[i] = (65 + i);
+        originCharacterSet[i] = (char) (65 + i);
     }
     // 新数组不将全部元素设为NULL时,
     // strlen()则可能返回一个不正确的值
     for (int i = 0; i < 26; i++) {
-        newCharacterSet[i] = NULL;
+        newCharacterSet[i] = (char)  NULL;
     }
 
     // 输出原数组
