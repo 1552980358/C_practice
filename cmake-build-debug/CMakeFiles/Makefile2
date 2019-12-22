@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /cygdrive/f/C/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/main3.dir/all
+all: CMakeFiles/main4.dir/all
 all: CMakeFiles/main1.dir/all
 all: CMakeFiles/main2.dir/all
 
@@ -61,6 +62,7 @@ all: CMakeFiles/main2.dir/all
 
 # The main recursive "clean" target.
 clean: CMakeFiles/main3.dir/clean
+clean: CMakeFiles/main4.dir/clean
 clean: CMakeFiles/main1.dir/clean
 clean: CMakeFiles/main2.dir/clean
 
@@ -97,6 +99,33 @@ main3: CMakeFiles/main3.dir/rule
 CMakeFiles/main3.dir/clean:
 	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/clean
 .PHONY : CMakeFiles/main3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main4.dir
+
+# All Build rule for target.
+CMakeFiles/main4.dir/all:
+	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/depend
+	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target main4"
+.PHONY : CMakeFiles/main4.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/f/C/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/f/C/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/main4.dir/rule
+
+# Convenience name for target.
+main4: CMakeFiles/main4.dir/rule
+
+.PHONY : main4
+
+# clean rule for target.
+CMakeFiles/main4.dir/clean:
+	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/clean
+.PHONY : CMakeFiles/main4.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main1.dir

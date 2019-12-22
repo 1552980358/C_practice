@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="C" targetName="main4" />
       <config projectName="C" targetName="main1" />
       <config projectName="C" targetName="main3" />
       <config projectName="C" targetName="main2" />
@@ -14,10 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7021405f-f111-4d97-8935-8729486a3911" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MultipleTable.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResolveQuardraticEquation.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reverse.c" beforeDir="false" afterPath="$PROJECT_DIR$/Reverse.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/C.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/C.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
@@ -58,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.main3">
+  <component name="RunManager" selected="CMake Application.main4">
     <configuration name="main1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C" TARGET_NAME="main1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C" RUN_TARGET_NAME="main1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -74,10 +74,16 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C" TARGET_NAME="main4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C" RUN_TARGET_NAME="main4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application.main1" />
       <item itemvalue="CMake Application.main2" />
       <item itemvalue="CMake Application.main3" />
+      <item itemvalue="CMake Application.main4" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -92,7 +98,8 @@
       <updated>1574520127574</updated>
       <workItem from="1574520129532" duration="1525000" />
       <workItem from="1575087834998" duration="799000" />
-      <workItem from="1576227458070" duration="568000" />
+      <workItem from="1576227458070" duration="970000" />
+      <workItem from="1577005514321" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="- Update Reverse.c&#10;- Update FindPrime.c">
       <created>1574521597380</created>
@@ -101,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574521597380</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Update MultipleTable.c&#10;- Update Reverse.c">
+      <created>1576228249877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576228249877</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +136,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Update Reverse.c&#10;- Update FindPrime.c" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Update Reverse.c&#10;- Update FindPrime.c" />
+    <MESSAGE value="- Update MultipleTable.c&#10;- Update Reverse.c" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Update MultipleTable.c&#10;- Update Reverse.c" />
   </component>
 </project>

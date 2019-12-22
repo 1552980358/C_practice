@@ -124,6 +124,19 @@ main3/fast:
 .PHONY : main3/fast
 
 #=============================================================================
+# Target rules for targets named main4
+
+# Build rule for target.
+main4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main4
+.PHONY : main4
+
+# fast build rule for target.
+main4/fast:
+	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/build
+.PHONY : main4/fast
+
+#=============================================================================
 # Target rules for targets named main1
 
 # Build rule for target.
@@ -203,6 +216,33 @@ MultipleTable.c.s:
 	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/MultipleTable.c.s
 .PHONY : MultipleTable.c.s
 
+ResolveQuadraticEquation.o: ResolveQuadraticEquation.c.o
+
+.PHONY : ResolveQuadraticEquation.o
+
+# target to build an object file
+ResolveQuadraticEquation.c.o:
+	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/ResolveQuadraticEquation.c.o
+.PHONY : ResolveQuadraticEquation.c.o
+
+ResolveQuadraticEquation.i: ResolveQuadraticEquation.c.i
+
+.PHONY : ResolveQuadraticEquation.i
+
+# target to preprocess a source file
+ResolveQuadraticEquation.c.i:
+	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/ResolveQuadraticEquation.c.i
+.PHONY : ResolveQuadraticEquation.c.i
+
+ResolveQuadraticEquation.s: ResolveQuadraticEquation.c.s
+
+.PHONY : ResolveQuadraticEquation.s
+
+# target to generate assembly for a file
+ResolveQuadraticEquation.c.s:
+	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/ResolveQuadraticEquation.c.s
+.PHONY : ResolveQuadraticEquation.c.s
+
 Reverse.o: Reverse.c.o
 
 .PHONY : Reverse.o
@@ -239,6 +279,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main3"
+	@echo "... main4"
 	@echo "... main1"
 	@echo "... main2"
 	@echo "... FindPrime.o"
@@ -247,6 +288,9 @@ help:
 	@echo "... MultipleTable.o"
 	@echo "... MultipleTable.i"
 	@echo "... MultipleTable.s"
+	@echo "... ResolveQuadraticEquation.o"
+	@echo "... ResolveQuadraticEquation.i"
+	@echo "... ResolveQuadraticEquation.s"
 	@echo "... Reverse.o"
 	@echo "... Reverse.i"
 	@echo "... Reverse.s"
