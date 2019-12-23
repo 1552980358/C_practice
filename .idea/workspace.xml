@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="C" targetName="main5" />
       <config projectName="C" targetName="main4" />
       <config projectName="C" targetName="main1" />
       <config projectName="C" targetName="main3" />
@@ -15,7 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7021405f-f111-4d97-8935-8729486a3911" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ResolveQuardraticEquation.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FractionSlop.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/C.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/C.cbp" afterDir="false" />
@@ -58,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.main4">
+  <component name="RunManager" selected="CMake Application.main5">
     <configuration name="main1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C" TARGET_NAME="main1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C" RUN_TARGET_NAME="main1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -79,11 +80,17 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main5" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C" TARGET_NAME="main5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C" RUN_TARGET_NAME="main5">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application.main1" />
       <item itemvalue="CMake Application.main2" />
       <item itemvalue="CMake Application.main3" />
       <item itemvalue="CMake Application.main4" />
+      <item itemvalue="CMake Application.main5" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -99,7 +106,8 @@
       <workItem from="1574520129532" duration="1525000" />
       <workItem from="1575087834998" duration="799000" />
       <workItem from="1576227458070" duration="970000" />
-      <workItem from="1577005514321" duration="1653000" />
+      <workItem from="1577005514321" duration="2412000" />
+      <workItem from="1577097473422" duration="2696000" />
     </task>
     <task id="LOCAL-00001" summary="- Update Reverse.c&#10;- Update FindPrime.c">
       <created>1574521597380</created>
@@ -115,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576228249877</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update ResolveQuadraticEquation.c">
+      <created>1577007297267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577007297267</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +152,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Update Reverse.c&#10;- Update FindPrime.c" />
     <MESSAGE value="- Update MultipleTable.c&#10;- Update Reverse.c" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Update MultipleTable.c&#10;- Update Reverse.c" />
+    <MESSAGE value="Update ResolveQuadraticEquation.c" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ResolveQuadraticEquation.c" />
   </component>
 </project>

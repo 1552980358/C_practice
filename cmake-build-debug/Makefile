@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /cygdrive/f/C/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/q1552/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/cygdrive/c/Users/q1552/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main3
+# Target rules for targets named main2
 
 # Build rule for target.
-main3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main3
-.PHONY : main3
+main2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main2
+.PHONY : main2
 
 # fast build rule for target.
-main3/fast:
-	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/build
-.PHONY : main3/fast
+main2/fast:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
+.PHONY : main2/fast
 
 #=============================================================================
-# Target rules for targets named main4
+# Target rules for targets named main5
 
 # Build rule for target.
-main4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main4
-.PHONY : main4
+main5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main5
+.PHONY : main5
 
 # fast build rule for target.
-main4/fast:
-	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/build
-.PHONY : main4/fast
+main5/fast:
+	$(MAKE) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/build
+.PHONY : main5/fast
 
 #=============================================================================
 # Target rules for targets named main1
@@ -150,17 +150,30 @@ main1/fast:
 .PHONY : main1/fast
 
 #=============================================================================
-# Target rules for targets named main2
+# Target rules for targets named main4
 
 # Build rule for target.
-main2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main2
-.PHONY : main2
+main4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main4
+.PHONY : main4
 
 # fast build rule for target.
-main2/fast:
-	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
-.PHONY : main2/fast
+main4/fast:
+	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/build
+.PHONY : main4/fast
+
+#=============================================================================
+# Target rules for targets named main3
+
+# Build rule for target.
+main3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main3
+.PHONY : main3
+
+# fast build rule for target.
+main3/fast:
+	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/build
+.PHONY : main3/fast
 
 FindPrime.o: FindPrime.c.o
 
@@ -188,6 +201,33 @@ FindPrime.s: FindPrime.c.s
 FindPrime.c.s:
 	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/FindPrime.c.s
 .PHONY : FindPrime.c.s
+
+FractionSlop.o: FractionSlop.c.o
+
+.PHONY : FractionSlop.o
+
+# target to build an object file
+FractionSlop.c.o:
+	$(MAKE) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/FractionSlop.c.o
+.PHONY : FractionSlop.c.o
+
+FractionSlop.i: FractionSlop.c.i
+
+.PHONY : FractionSlop.i
+
+# target to preprocess a source file
+FractionSlop.c.i:
+	$(MAKE) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/FractionSlop.c.i
+.PHONY : FractionSlop.c.i
+
+FractionSlop.s: FractionSlop.c.s
+
+.PHONY : FractionSlop.s
+
+# target to generate assembly for a file
+FractionSlop.c.s:
+	$(MAKE) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/FractionSlop.c.s
+.PHONY : FractionSlop.c.s
 
 MultipleTable.o: MultipleTable.c.o
 
@@ -276,15 +316,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main3"
-	@echo "... main4"
-	@echo "... main1"
 	@echo "... main2"
+	@echo "... main5"
+	@echo "... main1"
+	@echo "... main4"
+	@echo "... main3"
+	@echo "... edit_cache"
 	@echo "... FindPrime.o"
 	@echo "... FindPrime.i"
 	@echo "... FindPrime.s"
+	@echo "... FractionSlop.o"
+	@echo "... FractionSlop.i"
+	@echo "... FractionSlop.s"
 	@echo "... MultipleTable.o"
 	@echo "... MultipleTable.i"
 	@echo "... MultipleTable.s"
