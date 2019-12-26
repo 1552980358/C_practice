@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /cygdrive/f/C/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/DividedBy2.dir/all
 all: CMakeFiles/FindPrime.dir/all
 all: CMakeFiles/FractionSlop.dir/all
 all: CMakeFiles/Reverse.dir/all
@@ -63,6 +64,7 @@ all: CMakeFiles/ResolveQuadraticEquation.dir/all
 .PHONY : all
 
 # The main recursive "clean" target.
+clean: CMakeFiles/DividedBy2.dir/clean
 clean: CMakeFiles/FindPrime.dir/clean
 clean: CMakeFiles/FractionSlop.dir/clean
 clean: CMakeFiles/Reverse.dir/clean
@@ -78,13 +80,40 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
+# Target rules for target CMakeFiles/DividedBy2.dir
+
+# All Build rule for target.
+CMakeFiles/DividedBy2.dir/all:
+	$(MAKE) -f CMakeFiles/DividedBy2.dir/build.make CMakeFiles/DividedBy2.dir/depend
+	$(MAKE) -f CMakeFiles/DividedBy2.dir/build.make CMakeFiles/DividedBy2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target DividedBy2"
+.PHONY : CMakeFiles/DividedBy2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DividedBy2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/f/C/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DividedBy2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/f/C/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/DividedBy2.dir/rule
+
+# Convenience name for target.
+DividedBy2: CMakeFiles/DividedBy2.dir/rule
+
+.PHONY : DividedBy2
+
+# clean rule for target.
+CMakeFiles/DividedBy2.dir/clean:
+	$(MAKE) -f CMakeFiles/DividedBy2.dir/build.make CMakeFiles/DividedBy2.dir/clean
+.PHONY : CMakeFiles/DividedBy2.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/FindPrime.dir
 
 # All Build rule for target.
 CMakeFiles/FindPrime.dir/all:
 	$(MAKE) -f CMakeFiles/FindPrime.dir/build.make CMakeFiles/FindPrime.dir/depend
 	$(MAKE) -f CMakeFiles/FindPrime.dir/build.make CMakeFiles/FindPrime.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target FindPrime"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target FindPrime"
 .PHONY : CMakeFiles/FindPrime.dir/all
 
 # Build rule for subdir invocation for target.
@@ -111,7 +140,7 @@ CMakeFiles/FindPrime.dir/clean:
 CMakeFiles/FractionSlop.dir/all:
 	$(MAKE) -f CMakeFiles/FractionSlop.dir/build.make CMakeFiles/FractionSlop.dir/depend
 	$(MAKE) -f CMakeFiles/FractionSlop.dir/build.make CMakeFiles/FractionSlop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target FractionSlop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target FractionSlop"
 .PHONY : CMakeFiles/FractionSlop.dir/all
 
 # Build rule for subdir invocation for target.
@@ -138,7 +167,7 @@ CMakeFiles/FractionSlop.dir/clean:
 CMakeFiles/Reverse.dir/all:
 	$(MAKE) -f CMakeFiles/Reverse.dir/build.make CMakeFiles/Reverse.dir/depend
 	$(MAKE) -f CMakeFiles/Reverse.dir/build.make CMakeFiles/Reverse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target Reverse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target Reverse"
 .PHONY : CMakeFiles/Reverse.dir/all
 
 # Build rule for subdir invocation for target.
@@ -165,7 +194,7 @@ CMakeFiles/Reverse.dir/clean:
 CMakeFiles/MultipleTable.dir/all:
 	$(MAKE) -f CMakeFiles/MultipleTable.dir/build.make CMakeFiles/MultipleTable.dir/depend
 	$(MAKE) -f CMakeFiles/MultipleTable.dir/build.make CMakeFiles/MultipleTable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target MultipleTable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target MultipleTable"
 .PHONY : CMakeFiles/MultipleTable.dir/all
 
 # Build rule for subdir invocation for target.
@@ -192,7 +221,7 @@ CMakeFiles/MultipleTable.dir/clean:
 CMakeFiles/NumOf9.dir/all:
 	$(MAKE) -f CMakeFiles/NumOf9.dir/build.make CMakeFiles/NumOf9.dir/depend
 	$(MAKE) -f CMakeFiles/NumOf9.dir/build.make CMakeFiles/NumOf9.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target NumOf9"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target NumOf9"
 .PHONY : CMakeFiles/NumOf9.dir/all
 
 # Build rule for subdir invocation for target.
@@ -219,7 +248,7 @@ CMakeFiles/NumOf9.dir/clean:
 CMakeFiles/ResolveQuadraticEquation.dir/all:
 	$(MAKE) -f CMakeFiles/ResolveQuadraticEquation.dir/build.make CMakeFiles/ResolveQuadraticEquation.dir/depend
 	$(MAKE) -f CMakeFiles/ResolveQuadraticEquation.dir/build.make CMakeFiles/ResolveQuadraticEquation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target ResolveQuadraticEquation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/f/C/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target ResolveQuadraticEquation"
 .PHONY : CMakeFiles/ResolveQuadraticEquation.dir/all
 
 # Build rule for subdir invocation for target.

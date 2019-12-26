@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named DividedBy2
+
+# Build rule for target.
+DividedBy2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DividedBy2
+.PHONY : DividedBy2
+
+# fast build rule for target.
+DividedBy2/fast:
+	$(MAKE) -f CMakeFiles/DividedBy2.dir/build.make CMakeFiles/DividedBy2.dir/build
+.PHONY : DividedBy2/fast
+
+#=============================================================================
 # Target rules for targets named FindPrime
 
 # Build rule for target.
@@ -187,6 +200,33 @@ ResolveQuadraticEquation: cmake_check_build_system
 ResolveQuadraticEquation/fast:
 	$(MAKE) -f CMakeFiles/ResolveQuadraticEquation.dir/build.make CMakeFiles/ResolveQuadraticEquation.dir/build
 .PHONY : ResolveQuadraticEquation/fast
+
+DividedBy2.o: DividedBy2.c.o
+
+.PHONY : DividedBy2.o
+
+# target to build an object file
+DividedBy2.c.o:
+	$(MAKE) -f CMakeFiles/DividedBy2.dir/build.make CMakeFiles/DividedBy2.dir/DividedBy2.c.o
+.PHONY : DividedBy2.c.o
+
+DividedBy2.i: DividedBy2.c.i
+
+.PHONY : DividedBy2.i
+
+# target to preprocess a source file
+DividedBy2.c.i:
+	$(MAKE) -f CMakeFiles/DividedBy2.dir/build.make CMakeFiles/DividedBy2.dir/DividedBy2.c.i
+.PHONY : DividedBy2.c.i
+
+DividedBy2.s: DividedBy2.c.s
+
+.PHONY : DividedBy2.s
+
+# target to generate assembly for a file
+DividedBy2.c.s:
+	$(MAKE) -f CMakeFiles/DividedBy2.dir/build.make CMakeFiles/DividedBy2.dir/DividedBy2.c.s
+.PHONY : DividedBy2.c.s
 
 FindPrime.o: FindPrime.c.o
 
@@ -357,6 +397,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... DividedBy2"
 	@echo "... FindPrime"
 	@echo "... FractionSlop"
 	@echo "... Reverse"
@@ -364,6 +405,9 @@ help:
 	@echo "... MultipleTable"
 	@echo "... NumOf9"
 	@echo "... ResolveQuadraticEquation"
+	@echo "... DividedBy2.o"
+	@echo "... DividedBy2.i"
+	@echo "... DividedBy2.s"
 	@echo "... FindPrime.o"
 	@echo "... FindPrime.i"
 	@echo "... FindPrime.s"
