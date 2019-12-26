@@ -1,7 +1,8 @@
-/cygdrive/f/C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/f/C/cmake-build-debug/CMakeFiles/main2.dir
-/cygdrive/f/C/cmake-build-debug/CMakeFiles/main5.dir
-/cygdrive/f/C/cmake-build-debug/CMakeFiles/main1.dir
-/cygdrive/f/C/cmake-build-debug/CMakeFiles/main4.dir
-/cygdrive/f/C/cmake-build-debug/CMakeFiles/main3.dir
 /cygdrive/f/C/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/f/C/cmake-build-debug/CMakeFiles/FindPrime.dir
+/cygdrive/f/C/cmake-build-debug/CMakeFiles/FractionSlop.dir
+/cygdrive/f/C/cmake-build-debug/CMakeFiles/Reverse.dir
+/cygdrive/f/C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/f/C/cmake-build-debug/CMakeFiles/MultipleTable.dir
+/cygdrive/f/C/cmake-build-debug/CMakeFiles/NumOf9.dir
+/cygdrive/f/C/cmake-build-debug/CMakeFiles/ResolveQuadraticEquation.dir

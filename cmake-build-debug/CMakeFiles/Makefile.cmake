@@ -47,9 +47,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/main2.dir/DependInfo.cmake"
-  "CMakeFiles/main5.dir/DependInfo.cmake"
-  "CMakeFiles/main1.dir/DependInfo.cmake"
-  "CMakeFiles/main4.dir/DependInfo.cmake"
-  "CMakeFiles/main3.dir/DependInfo.cmake"
+  "CMakeFiles/FindPrime.dir/DependInfo.cmake"
+  "CMakeFiles/FractionSlop.dir/DependInfo.cmake"
+  "CMakeFiles/Reverse.dir/DependInfo.cmake"
+  "CMakeFiles/MultipleTable.dir/DependInfo.cmake"
+  "CMakeFiles/NumOf9.dir/DependInfo.cmake"
+  "CMakeFiles/ResolveQuadraticEquation.dir/DependInfo.cmake"
   )

@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /cygdrive/f/C/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/q1552/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/cygdrive/c/Users/q1552/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,69 +111,82 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main2
+# Target rules for targets named FindPrime
 
 # Build rule for target.
-main2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main2
-.PHONY : main2
+FindPrime: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FindPrime
+.PHONY : FindPrime
 
 # fast build rule for target.
-main2/fast:
-	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
-.PHONY : main2/fast
+FindPrime/fast:
+	$(MAKE) -f CMakeFiles/FindPrime.dir/build.make CMakeFiles/FindPrime.dir/build
+.PHONY : FindPrime/fast
 
 #=============================================================================
-# Target rules for targets named main5
+# Target rules for targets named FractionSlop
 
 # Build rule for target.
-main5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main5
-.PHONY : main5
+FractionSlop: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FractionSlop
+.PHONY : FractionSlop
 
 # fast build rule for target.
-main5/fast:
-	$(MAKE) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/build
-.PHONY : main5/fast
+FractionSlop/fast:
+	$(MAKE) -f CMakeFiles/FractionSlop.dir/build.make CMakeFiles/FractionSlop.dir/build
+.PHONY : FractionSlop/fast
 
 #=============================================================================
-# Target rules for targets named main1
+# Target rules for targets named Reverse
 
 # Build rule for target.
-main1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main1
-.PHONY : main1
+Reverse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Reverse
+.PHONY : Reverse
 
 # fast build rule for target.
-main1/fast:
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/build
-.PHONY : main1/fast
+Reverse/fast:
+	$(MAKE) -f CMakeFiles/Reverse.dir/build.make CMakeFiles/Reverse.dir/build
+.PHONY : Reverse/fast
 
 #=============================================================================
-# Target rules for targets named main4
+# Target rules for targets named MultipleTable
 
 # Build rule for target.
-main4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main4
-.PHONY : main4
+MultipleTable: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MultipleTable
+.PHONY : MultipleTable
 
 # fast build rule for target.
-main4/fast:
-	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/build
-.PHONY : main4/fast
+MultipleTable/fast:
+	$(MAKE) -f CMakeFiles/MultipleTable.dir/build.make CMakeFiles/MultipleTable.dir/build
+.PHONY : MultipleTable/fast
 
 #=============================================================================
-# Target rules for targets named main3
+# Target rules for targets named NumOf9
 
 # Build rule for target.
-main3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main3
-.PHONY : main3
+NumOf9: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NumOf9
+.PHONY : NumOf9
 
 # fast build rule for target.
-main3/fast:
-	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/build
-.PHONY : main3/fast
+NumOf9/fast:
+	$(MAKE) -f CMakeFiles/NumOf9.dir/build.make CMakeFiles/NumOf9.dir/build
+.PHONY : NumOf9/fast
+
+#=============================================================================
+# Target rules for targets named ResolveQuadraticEquation
+
+# Build rule for target.
+ResolveQuadraticEquation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ResolveQuadraticEquation
+.PHONY : ResolveQuadraticEquation
+
+# fast build rule for target.
+ResolveQuadraticEquation/fast:
+	$(MAKE) -f CMakeFiles/ResolveQuadraticEquation.dir/build.make CMakeFiles/ResolveQuadraticEquation.dir/build
+.PHONY : ResolveQuadraticEquation/fast
 
 FindPrime.o: FindPrime.c.o
 
@@ -181,7 +194,7 @@ FindPrime.o: FindPrime.c.o
 
 # target to build an object file
 FindPrime.c.o:
-	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/FindPrime.c.o
+	$(MAKE) -f CMakeFiles/FindPrime.dir/build.make CMakeFiles/FindPrime.dir/FindPrime.c.o
 .PHONY : FindPrime.c.o
 
 FindPrime.i: FindPrime.c.i
@@ -190,7 +203,7 @@ FindPrime.i: FindPrime.c.i
 
 # target to preprocess a source file
 FindPrime.c.i:
-	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/FindPrime.c.i
+	$(MAKE) -f CMakeFiles/FindPrime.dir/build.make CMakeFiles/FindPrime.dir/FindPrime.c.i
 .PHONY : FindPrime.c.i
 
 FindPrime.s: FindPrime.c.s
@@ -199,7 +212,7 @@ FindPrime.s: FindPrime.c.s
 
 # target to generate assembly for a file
 FindPrime.c.s:
-	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/FindPrime.c.s
+	$(MAKE) -f CMakeFiles/FindPrime.dir/build.make CMakeFiles/FindPrime.dir/FindPrime.c.s
 .PHONY : FindPrime.c.s
 
 FractionSlop.o: FractionSlop.c.o
@@ -208,7 +221,7 @@ FractionSlop.o: FractionSlop.c.o
 
 # target to build an object file
 FractionSlop.c.o:
-	$(MAKE) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/FractionSlop.c.o
+	$(MAKE) -f CMakeFiles/FractionSlop.dir/build.make CMakeFiles/FractionSlop.dir/FractionSlop.c.o
 .PHONY : FractionSlop.c.o
 
 FractionSlop.i: FractionSlop.c.i
@@ -217,7 +230,7 @@ FractionSlop.i: FractionSlop.c.i
 
 # target to preprocess a source file
 FractionSlop.c.i:
-	$(MAKE) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/FractionSlop.c.i
+	$(MAKE) -f CMakeFiles/FractionSlop.dir/build.make CMakeFiles/FractionSlop.dir/FractionSlop.c.i
 .PHONY : FractionSlop.c.i
 
 FractionSlop.s: FractionSlop.c.s
@@ -226,7 +239,7 @@ FractionSlop.s: FractionSlop.c.s
 
 # target to generate assembly for a file
 FractionSlop.c.s:
-	$(MAKE) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/FractionSlop.c.s
+	$(MAKE) -f CMakeFiles/FractionSlop.dir/build.make CMakeFiles/FractionSlop.dir/FractionSlop.c.s
 .PHONY : FractionSlop.c.s
 
 MultipleTable.o: MultipleTable.c.o
@@ -235,7 +248,7 @@ MultipleTable.o: MultipleTable.c.o
 
 # target to build an object file
 MultipleTable.c.o:
-	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/MultipleTable.c.o
+	$(MAKE) -f CMakeFiles/MultipleTable.dir/build.make CMakeFiles/MultipleTable.dir/MultipleTable.c.o
 .PHONY : MultipleTable.c.o
 
 MultipleTable.i: MultipleTable.c.i
@@ -244,7 +257,7 @@ MultipleTable.i: MultipleTable.c.i
 
 # target to preprocess a source file
 MultipleTable.c.i:
-	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/MultipleTable.c.i
+	$(MAKE) -f CMakeFiles/MultipleTable.dir/build.make CMakeFiles/MultipleTable.dir/MultipleTable.c.i
 .PHONY : MultipleTable.c.i
 
 MultipleTable.s: MultipleTable.c.s
@@ -253,8 +266,35 @@ MultipleTable.s: MultipleTable.c.s
 
 # target to generate assembly for a file
 MultipleTable.c.s:
-	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/MultipleTable.c.s
+	$(MAKE) -f CMakeFiles/MultipleTable.dir/build.make CMakeFiles/MultipleTable.dir/MultipleTable.c.s
 .PHONY : MultipleTable.c.s
+
+NumOf9.o: NumOf9.c.o
+
+.PHONY : NumOf9.o
+
+# target to build an object file
+NumOf9.c.o:
+	$(MAKE) -f CMakeFiles/NumOf9.dir/build.make CMakeFiles/NumOf9.dir/NumOf9.c.o
+.PHONY : NumOf9.c.o
+
+NumOf9.i: NumOf9.c.i
+
+.PHONY : NumOf9.i
+
+# target to preprocess a source file
+NumOf9.c.i:
+	$(MAKE) -f CMakeFiles/NumOf9.dir/build.make CMakeFiles/NumOf9.dir/NumOf9.c.i
+.PHONY : NumOf9.c.i
+
+NumOf9.s: NumOf9.c.s
+
+.PHONY : NumOf9.s
+
+# target to generate assembly for a file
+NumOf9.c.s:
+	$(MAKE) -f CMakeFiles/NumOf9.dir/build.make CMakeFiles/NumOf9.dir/NumOf9.c.s
+.PHONY : NumOf9.c.s
 
 ResolveQuadraticEquation.o: ResolveQuadraticEquation.c.o
 
@@ -262,7 +302,7 @@ ResolveQuadraticEquation.o: ResolveQuadraticEquation.c.o
 
 # target to build an object file
 ResolveQuadraticEquation.c.o:
-	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/ResolveQuadraticEquation.c.o
+	$(MAKE) -f CMakeFiles/ResolveQuadraticEquation.dir/build.make CMakeFiles/ResolveQuadraticEquation.dir/ResolveQuadraticEquation.c.o
 .PHONY : ResolveQuadraticEquation.c.o
 
 ResolveQuadraticEquation.i: ResolveQuadraticEquation.c.i
@@ -271,7 +311,7 @@ ResolveQuadraticEquation.i: ResolveQuadraticEquation.c.i
 
 # target to preprocess a source file
 ResolveQuadraticEquation.c.i:
-	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/ResolveQuadraticEquation.c.i
+	$(MAKE) -f CMakeFiles/ResolveQuadraticEquation.dir/build.make CMakeFiles/ResolveQuadraticEquation.dir/ResolveQuadraticEquation.c.i
 .PHONY : ResolveQuadraticEquation.c.i
 
 ResolveQuadraticEquation.s: ResolveQuadraticEquation.c.s
@@ -280,7 +320,7 @@ ResolveQuadraticEquation.s: ResolveQuadraticEquation.c.s
 
 # target to generate assembly for a file
 ResolveQuadraticEquation.c.s:
-	$(MAKE) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/ResolveQuadraticEquation.c.s
+	$(MAKE) -f CMakeFiles/ResolveQuadraticEquation.dir/build.make CMakeFiles/ResolveQuadraticEquation.dir/ResolveQuadraticEquation.c.s
 .PHONY : ResolveQuadraticEquation.c.s
 
 Reverse.o: Reverse.c.o
@@ -289,7 +329,7 @@ Reverse.o: Reverse.c.o
 
 # target to build an object file
 Reverse.c.o:
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/Reverse.c.o
+	$(MAKE) -f CMakeFiles/Reverse.dir/build.make CMakeFiles/Reverse.dir/Reverse.c.o
 .PHONY : Reverse.c.o
 
 Reverse.i: Reverse.c.i
@@ -298,7 +338,7 @@ Reverse.i: Reverse.c.i
 
 # target to preprocess a source file
 Reverse.c.i:
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/Reverse.c.i
+	$(MAKE) -f CMakeFiles/Reverse.dir/build.make CMakeFiles/Reverse.dir/Reverse.c.i
 .PHONY : Reverse.c.i
 
 Reverse.s: Reverse.c.s
@@ -307,7 +347,7 @@ Reverse.s: Reverse.c.s
 
 # target to generate assembly for a file
 Reverse.c.s:
-	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/Reverse.c.s
+	$(MAKE) -f CMakeFiles/Reverse.dir/build.make CMakeFiles/Reverse.dir/Reverse.c.s
 .PHONY : Reverse.c.s
 
 # Help Target
@@ -316,13 +356,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... main2"
-	@echo "... main5"
-	@echo "... main1"
-	@echo "... main4"
-	@echo "... main3"
 	@echo "... edit_cache"
+	@echo "... FindPrime"
+	@echo "... FractionSlop"
+	@echo "... Reverse"
+	@echo "... rebuild_cache"
+	@echo "... MultipleTable"
+	@echo "... NumOf9"
+	@echo "... ResolveQuadraticEquation"
 	@echo "... FindPrime.o"
 	@echo "... FindPrime.i"
 	@echo "... FindPrime.s"
@@ -332,6 +373,9 @@ help:
 	@echo "... MultipleTable.o"
 	@echo "... MultipleTable.i"
 	@echo "... MultipleTable.s"
+	@echo "... NumOf9.o"
+	@echo "... NumOf9.i"
+	@echo "... NumOf9.s"
 	@echo "... ResolveQuadraticEquation.o"
 	@echo "... ResolveQuadraticEquation.i"
 	@echo "... ResolveQuadraticEquation.s"
